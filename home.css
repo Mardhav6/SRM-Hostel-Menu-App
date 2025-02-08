@@ -1,0 +1,507 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+    padding: 25px;
+    font-size: 110%;
+    font-weight:bold;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+ 
+  
+  li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+    text-decoration: none;
+    background-color: blueviolet;
+    color: white;
+    
+  
+  }
+  
+  .head{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+  }
+  .logo{
+    float: left;
+    color: white;
+    font-size: 130%;
+    font-weight:bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 25px;
+    vertical-align:bottom;
+    padding-top: 35px;
+    padding-left: 150px;
+
+
+  }
+  .move{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    background-color: white;
+    color: blueviolet;
+    margin-right: 2px;
+    border-radius: 10px;
+  }
+  .nav{
+    background-color: blueviolet;
+  }
+.title{
+    padding-top: 15px;
+    color:blue;
+    margin-top: 8%;
+  }
+li a:hover{
+    color:rgb(244, 240, 8);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(180, 227, 227);
+}
+
+.meal-container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border-radius: 50px;
+    background-color: white;
+    padding-bottom: 0px;
+    padding-top: 0 px;
+
+}
+.social-login {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .5s;       
+    -webkit-transition: background .5s;
+    &:first-child {
+      margin-right: 10px;
+    }
+    
+    
+  }
+}
+span {
+  font-size: 17px;
+  color: white;
+  margin-left: 5px;
+}
+
+#mealTitle {
+    font-size: 28px;
+    margin-bottom: 3px;
+    color: rgb(5, 109, 141);
+}
+
+#mealDescription {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+#mealInfo1 {
+    font-size: 20px;
+    color: rgb(5, 109, 141);
+    padding-right: 0%;
+}
+
+/*about*/
+#about{
+  padding-top: 7%;
+}
+.break{
+  display: none;
+}
+.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.section-title {
+  position: relative;
+  font-size: 2 rem;
+  color: #4070f4;
+  margin-top: 1 rem;
+  margin-bottom: 2 rem ;
+  text-align: center;
+  padding-top: 2.7px;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: #4070f4;
+}
+.about_container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+  }
+
+  .about_img svg {
+    margin-left: 15%;
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 450px;
+    display: block;
+    float: left;
+    padding-right: 70px;
+  }
+  /*team*/
+  .section-title{
+    padding-bottom: 0px;
+  }
+  
+  .skills_container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+    padding-top: 0px;
+  }
+  .courses .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .courses .box-container .box{
+    border-radius: .5rem;
+    
+    padding: 2rem;
+  }
+  
+  .courses .box-container .box .tutor{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .courses .box-container .box  img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .courses .box-container .box  h3{
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: .2rem;
+  }
+  
+  .courses .box-container .box span{
+    font-size: 1.3rem;
+    color:var(--light-color);
+  }
+  
+  .courses .box-container .box .thumb{
+    position: relative;
+  }
+  
+  .courses .box-container .box .thumb span{
+    position: absolute;
+    top:1rem; left: 1rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    background-color: rgba(0,0,0,.3);
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .courses .box-container .box .thumb img{
+    width: 80%;
+    height: 20rem;
+    object-fit: contain;
+    border-radius: .5rem;
+    align-items: center;
+    overflow-y: scroll;
+  }
+  
+  .courses .box-container .box .title{
+    font-size: 2rem;
+    color: rgba(26, 22, 22, 0.614);
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+  }
+  .title1{
+    color: rgb(72, 72, 72) !important;
+  }
+
+  /*contact*/
+  .control_input {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid #0e2431;
+    outline: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  .control_button {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: auto;
+    color: white;
+    margin-right: 38%;
+    margin-top: 0px;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+
+  }
+  .control_button :hover{
+    background-color: #dddddd;
+    color: blueviolet;
+  }
+  .contact_form {
+    width: 400px;
+  }
+  .contact_container {
+    justify-items: center;
+  }
+  .control_input {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid #0e2431;
+    outline: none;
+    margin-bottom: 1.5rem;
+  }
+  
+  .control_button {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  
+  
+.footer{
+    background-color: blueviolet;
+    padding: 10px;
+    margin-top: 0;
+    color: white;
+
+}
+footer a{
+    color:yellow;
+    text-decoration: none;
+
+}
+.chethan{
+  display: none;
+}
+@media screen  and (max-width:1034px) {
+  body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    margin-top: 2px;
+  }
+  .nav{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
+  .title{
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+
+  
+
+  .move,.yup,.yes,.ok,.zone{
+    display: none;
+  }
+  
+
+  .move{
+    margin-top: 0px;
+    margin-right: px;
+    padding-left: 10px;
+  }
+  
+  
+  .logo{
+    text-align: center;
+    padding-left: 34%;
+    font-size: 35px;
+  }
+  .zone{
+    padding-left: 0px;
+  }
+  .title{
+    margin-top: 35%;
+    margin-bottom: 7%;
+    padding-left: 5%;
+    font-size: 38px;
+  }
+  #mealContainer{
+    margin-left: 45px;
+    width: 80%;
+    height: 200%;
+    margin-bottom: 30px;
+  }
+  li a {
+    font-size: 23px;
+    margin-bottom:5%;
+    padding: 5px;
+  }
+  li a .move{
+    padding: 0px;
+  }
+  #mealTitle{
+    font-size: 35px;
+  }
+  #mealDescription{
+    font-size: 25px;
+  }
+ #mealInfo1{
+  font-size: 30px;
+ }
+ #mealInfo2, #mealInfo3, #mealInfo4, #mealInfo5, #mealInfo6{
+  font-size: 25px;
+ }
+ button span{
+  font-size: 25px;
+  
+  
+ }
+ button{
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 45px;
+ }
+ .social-login{
+  margin-bottom: 40px;
+  margin-top: 40px;
+ }
+ .section-title{
+  font-size: 33px;
+}
+.section-title::after {
+  margin-top: 10px;
+}
+.about_img{
+  
+  display: none;
+}
+.about_subtitle{
+  font-size: 30px;
+  text-align: center;
+}
+.text h3{
+  font-size: 26px;
+  padding-left: 40px;
+}
+.text pre{
+  font-size: 25px;
+  padding-left: 40px;
+}
+.break{
+  display: inline-block;
+}
+.text h4{
+  font-size: 25px;
+}
+.thumb{
+  padding-left: 100px !important;
+}
+.box h3{
+  padding-left: 195px !important;
+}
+.title1{
+  padding-left: 400px !important;
+  color:rgb(83, 75, 75) !important;
+  text-align: center !important;
+}
+.section-title{
+  margin-bottom: 30px;
+}
+.control_input {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1.5px solid #0e2431;
+  outline: none;
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
+.control_button{
+  margin-top: 30px;
+  font-size: 25px;
+}
+.footer{
+  background-color: blueviolet;
+  padding: 20px;
+  margin-top: 10px;
+  color: white;
+  font-size: 25px;
+
+}/*
+.head,.title,.meal-container,#about,#contact{
+  display: none;
+}
+.chethan{
+  display: none;
+  margin-top: 35%;
+  margin-left: 20%;
+  margin-right: 20%;
+  
+}
+*/
+
+}
+
+
+
+
